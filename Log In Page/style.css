@@ -1,0 +1,152 @@
+:root {
+  --shadow-color: #24242493;
+  --white: rgb(221, 221, 221);
+  --first-color: rgba(0, 158, 127, 1);
+  --second-color: rgba(14, 42, 71, 1);
+  --third-color: rgba(28, 83, 142, 1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 0.1s ease-in-out;
+}
+
+body {
+  color: var(--shadow-color);
+  background: var(--white);
+  height: 100vh;
+  font-weight: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 55rem;
+  display: flex;
+  box-shadow: 0px -50px 10px 20px var(--white),
+    -50px -13px 10px 10px var(--white), 50px -13px 10px 10px var(--white),
+    0px 10px 50px -25px rgba(49, 49, 49, 0.5);
+  font-size: 0.5;
+  border-radius: 10px;
+}
+
+.wrapper1 {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 5rem;
+  background: rgb(238, 238, 238);
+  border-radius: 10px 0 0 10px;
+}
+
+img {
+  width: 120px;
+  align-self: center;
+  padding-bottom: 16px;
+}
+
+.wrapper2 {
+  width: 55%;
+  border-radius: 0 10px 10px 0;
+  background: url(Sprinkle.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  border-radius: 5px 5px 5px 5px;
+  width: 300px;
+  align-self: center;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 0 10px 50px 100px var(--shadow-color);
+  text-align: center;
+}
+
+.wrapper2 p {
+  color: #fff;
+  width: 250px;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+input,
+button {
+  padding: 8px 4px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  outline: 1px solid gray;
+  border: none;
+  accent-color: var(--first-color);
+  transition: 0.1s ease-in-out;
+  width: 100%;
+}
+
+input:focus {
+  outline: 1px solid var(--first-color);
+}
+
+button {
+  background: linear-gradient(
+    90deg,
+    var(--first-color) 0%,
+    var(--third-color) 50%,
+    var(--first-color) 100%
+  );
+  cursor: pointer;
+  color: var(--white);
+  outline: 0.5px solid var(--first-color);
+  font-weight: bold;
+}
+
+button:hover {
+  background: linear-gradient(
+    90deg,
+    var(--third-color) 0%,
+    var(--first-color) 50%,
+    var(--second-color) 100%
+  );
+  color: var(--third-color);
+  transform: translateY(-2.5px);
+  box-shadow: 0 2.5px 2.5px 1px var(--shadow-color);
+}
+
+.forgot-password {
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--first-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .container {
+    width: fit-content;
+  }
+
+  .wrapper1 {
+    width: 100%;
+  }
+
+  .wrapper2 {
+    display: none;
+  }
+}

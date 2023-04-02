@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.parent-box {
+    width: 100px;
+    height: 100px;
+    background: rgb(155, 167, 50);
+    transition: ease-in-out 1s;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.parent-box:active {
+    transform: rotateX(540deg);
+}
+
+.child-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    transition: ease-in-out 1s;
+    /* transition:  */
+    cursor: pointer;
+}
+
+.child-box:active {
+    left: 50%;
+    bottom: 100%;
+}
+
+.child-box:hover {
+    background:rgb(31, 179, 184);
+    transition: .5s;
+}
+
+.another-box {
+    width: 50px;
+    height: 50px;
+    background: green;
+    outline: 1px;
+    padding: 10px;
+    margin: 10px;
+    transition: ease-in-out 1s;
+}
+
+.another-box2 {
+    background: blue;
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out 1s;
+}
+
+.transformed-state {
+    transform: rotate(270deg);
+    background-color: blue;
+    color: yellow;
+    font-size: 12px;
+    transition-property: background-color font-size transform color;
+    transition-timing-function: ease-in-out;
+  }

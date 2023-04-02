@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap");
+
+:root {
+  --pure-black: hsl(0, 0%, 10%);
+  --pure-white: hsl(0, 0%, 90%);
+  --gray: hsl(0, 0%, 70%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--pure-black);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: var(--pure-white);
+  padding-bottom: 4.8rem;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  margin-inline: 12rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 4.8rem 16rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 3.2rem;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  align-items: center;
+  font-size: 1.6rem;
+  gap: 6.4rem;
+  font-weight: bold;
+}
+
+.list > * {
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+
+.list li a {
+  text-decoration: none;
+}
+
+button {
+  padding: 1.5rem;
+  border-radius: 3.2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 18rem;
+  border: none;
+  transition: 0.15s ease-in-out;
+}
+
+.header button {
+  background: inherit;
+  outline: 1px solid var(--pure-black);
+  border-radius: 3.2rem;
+}
+
+.list li:hover {
+  text-decoration: underline;
+}
+
+.list button:hover {
+  background: var(--pure-black);
+  color: var(--pure-white);
+}
+
+.main {
+  margin-bottom: 4.8rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.main .text-container {
+  width: 58.8rem;
+}
+
+.main #title-text {
+  font-size: 6.4rem;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+  margin-bottom: 4.8rem;
+}
+
+.main #paragraph {
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 4.8rem;
+}
+
+.image-container {
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 56rem;
+  min-height: auto;
+}
+
+.main button {
+  background-color: var(--pure-black);
+  color: var(--pure-white);
+}
+
+.main button:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 25px -16px rgba(74, 74, 74, 0.51);
+  -webkit-box-shadow: 0px 14px 25px -16px rgba(74, 74, 74, 0.51);
+  -moz-box-shadow: 0px 14px 25px -16px rgba(74, 74, 74, 0.51);
+  transform: translateY(-4px);
+}
+
+.learn-more {
+  margin-left: 2.4rem;
+}
+
+.learn-more a,
+i {
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  margin-inline: 0 0.5rem;
+}
+
+.learn-more a:hover {
+  margin-inline: 0 1rem;
+}
+
+.footer {
+
+}
+
+.footer .wrapper {
+  width: 100%;
+  background: var(--gray);
+  border-radius: 32px;
+  display: flex;
+  padding: 8rem 29rem 8rem 20rem;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.footer .wrapper span:last-child .last-child-wrapper .numbers {
+  font-size: 2.4rem;
+  margin-left: 1rem;
+}
+
+.last-child-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.footer .wrapper span .title {
+  font-size: 1.6rem;
+}
+
+.footer .wrapper span .numbers {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.footer .wrapper .last-span {
+    /* margin-right: 20rem; */
+}
+
+.footer .wrapper .last-span #circle-container {
+    position: relative;
+    height: 6.4rem;
+}
+
+.footer .wrapper .last-span #circle-container .circle {
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.footer .wrapper .last-span #circle-container .circle:nth-child(1) {
+    background: hsl(0, 0%, 50%);
+    left: 0;
+}
+
+.footer .wrapper .last-span #circle-container .circle:nth-child(2) {
+    background: hsl(61, 0%, 40%);
+    left: 20%;
+}
+
+.footer .wrapper .last-span #circle-container .circle:nth-child(3) {
+    background: hsl(96, 0%, 30%);
+    left: 40%;
+}
+
+.footer .wrapper .last-span #circle-container .circle:nth-child(4) {
+    background: hsl(170, 0%, 20%);
+    left: 60%;
+}
+
+.footer .wrapper .last-span #circle-container .circle:nth-child(5) {
+    background: hsl(0, 0%, 10%);
+    left: 80%;
+}

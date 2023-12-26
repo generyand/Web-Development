@@ -1,0 +1,151 @@
+:root {
+  --yellow: rgb(255, 208, 0);
+  --yellow-hover: hsl(49, 100%, 65%);
+}
+
+* {
+  /* outline: 1px solid red; */
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 4rem;
+  padding: 3rem;
+  outline: 1px solid black;
+  border-radius: 10px;
+  max-width: 700px;
+  margin-inline: 1rem;
+}
+
+.container > * {
+  /* outline: 1px solid red; */
+}
+
+.text-respond {
+  font-size: color;
+  /* color: red; */
+  min-height: 150px;
+}
+
+strong {
+  color: green;
+}
+
+.buttons {
+  display: flex;
+  bottom: 0;
+  /* outline: 1px solid red; */
+  gap: 2rem;
+  min-height: 240px;
+}
+
+.button {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  min-height: 4rem;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+  border: 3px solid var(--yellow);
+}
+
+.buy-btn {
+  font-size: 16px;
+  font-weight: 350;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: all 235ms ease-in-out;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: var(--yellow);
+}
+
+.active:hover {
+  background-color: var(--yellow-hover);
+}
+
+@media (min-width: 768px) {
+  .buy-btn {
+    padding: 13px 50px 13px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    /* outline: none; */
+    transition: all 1s linear;
+    width: 95%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    max-height: 640px;
+    gap: 1rem;
+  }
+
+  .button {
+    /* outline: 1px solid red; */
+  }
+
+  .text-respond {
+    min-width: 300px;
+  }
+}
